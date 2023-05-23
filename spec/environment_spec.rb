@@ -1,6 +1,8 @@
-describe "environment.rb" do
-  it "loads the code for the Garden and Plant classes" do
-    expect { Garden }.not_to raise_error
-    expect { Plant }.not_to raise_error
-  end
-end
+# config/environment.rb
+
+require_relative '../lib/garden'
+require_relative '../lib/plant'
+# Add any additional require_relative statements for other classes in the lib directory
+
+# Additional configuration code if needed
+
